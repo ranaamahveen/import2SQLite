@@ -4,22 +4,22 @@ Instructions to build the project
 -----------------------------------------------------------------------------------------------------------------------
 1. Navigate to repository https://github.com/ranaamahveen/import2SQLite.git 
 2. Download the source files from git repository 
-3. 
+3. Open command prompt and navigate to the folder mavensql where pom.xml is located
+4. Run the command 'mvn clean package' to clean and build the jar package
+5. The above command creates a jar file named 'importCSV-0.0.1-SNAPSHOT.jar' in target folder
+
 Instructions to run the program
 -----------------------------------------------------------------------------------------------------------------------
-
-3.	Open command prompt and navigate to the downloaded file location
-4.	Run the ‘import2SQLite.jar’ using the below command
-  java -jar import2SQLite.jar
-5.	Enter the csv file name with path that needs to be parsed to SQLite DB and press enter
-6.	After successful run, ms3log.txt and ms3.db will be created in your working directory
+1. Run the command 'java -jar target/importCSV-0.0.1-SNAPSHOT.jar' from the same path
+2. A prompt to enter csv file name will be shown, enter the source csv file name(ms3Interview.csv) with path
+3. After a successful run, ms3log.txt, ms3.db and bad-data<time-stamp>.csv will be generated in your working directory
 7.	Load ms3.db to check the inserted table using SQLite manager add on or SQLite DB manager
 
 Technologies and Versions used
 ----------------------------------------
 
 I used the following technologies: 
-Java, JDBC, log4j for logging purposes, DB browser for SQLite for testing and Eclipse IDE
+Java, JDBC, maven build tool, log4j for logging purposes, DB browser for SQLite for testing and Eclipse IDE
 Jdk – jdk-10
 SQLite JDBC driver - sqlite-jdbc-3.8.6.jar
 Log4j – log4j-1.2.17.jar
