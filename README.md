@@ -6,6 +6,12 @@ List of files in the repository
 3. Source CSV file 
 4. DDL file with create and insert queries
 
+Prerequisites
+-----------------------------------------------------------------------------------------------------------------------
+1. Java and maven should be installed in the machine prior to building the project
+2. Set Java and maven home in environmental variables path
+3. Open command line and enter 'java -version' and 'mvn -version' commands to see if the installation is successful
+
 Instructions to build the project
 -----------------------------------------------------------------------------------------------------------------------
 1. Navigate to repository https://github.com/ranaamahveen/import2SQLite.git 
@@ -37,7 +43,6 @@ Log4j – log4j-1.2.17.jar
 
 Requirements
 ------------------------------------------------
-
 1. CSV file is inserted into the SQLite DB
 2. Records with any blank cells or records containing more than the given number of columns are verified and written to bad-data-<timestamp>.csv
 3. Mentioned statistics are written to log file named ms3log.txt
@@ -46,7 +51,6 @@ Requirements
 
 Approach
 ---------------------------------------------
-
 Eclipse IDE is used to build this project, I explored a little about SQLite DB 
 After reading the programming challenge instruction file, I researched about SQLite DB and JDBC connection to SQLite. I tried both SQLite manager addon for google chrome and SQLite DB browser to get familiar with SQLite. Then, I proceeded with the code to parse the CSV and used SQLite JDBC driver to initiate the connection between java and SQLIte.
 
