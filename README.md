@@ -18,7 +18,7 @@ Instructions to build the project
 2. Download the source files from git repository 
 3. Open command prompt and navigate to the folder mavensql where pom.xml is located
 4. Run the command 'mvn clean package' to clean and build the jar package
-5. After successful build, a jar file named 'importCSV-0.0.1-SNAPSHOT.jar' will be generated in target folder
+5. After successful build, 'target' folder is created, a jar file named 'importCSV-0.0.1-SNAPSHOT.jar' and other files including .class files are generated within other folders in target folder
 
 Instructions to run the program
 -----------------------------------------------------------------------------------------------------------------------
