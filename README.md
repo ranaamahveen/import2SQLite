@@ -27,6 +27,8 @@ I used the following technologies:
 
 Java, JDBC, maven build tool, log4j for logging purposes, DB browser for SQLite for testing and Eclipse IDE
 
+maven - apache-maven-3.6.1
+
 Jdk – jdk-10
 
 SQLite JDBC driver - sqlite-jdbc-3.8.6.jar
@@ -45,7 +47,7 @@ Requirements
 Approach
 ---------------------------------------------
 
-Eclipse IDE is used to code the project, I explored a little about SQLite DB 
+Eclipse IDE is used to build this project, I explored a little about SQLite DB 
 After reading the programming challenge instruction file, I researched about SQLite DB and JDBC connection to SQLite. I tried both SQLite manager addon for google chrome and SQLite DB browser to get familiar with SQLite. Then, I proceeded with the code to parse the CSV and used SQLite JDBC driver to initiate the connection between java and SQLIte.
 
 I had a little difficulty in parsing the column value which was separated with comma within the same column, but I figured it out after re-reading the instructions. I used log4j for logging the statistics to the log file.
