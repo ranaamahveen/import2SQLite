@@ -1,10 +1,13 @@
 # import2SQLite
+
 Instructions to build the project
 -----------------------------------------------------------------------------------------------------------------------
+1. Navigate to repository https://github.com/ranaamahveen/import2SQLite.git 
+2. Download the source files from git repository 
+3. 
 Instructions to run the program
----------------------------------------------------------------------------------
-1.	Navigate to repository https://github.com/ranaamahveen/MS3.git 
-2.	Download the source files and Jar file from git repository
+-----------------------------------------------------------------------------------------------------------------------
+
 3.	Open command prompt and navigate to the downloaded file location
 4.	Run the ‘import2SQLite.jar’ using the below command
   java -jar import2SQLite.jar
