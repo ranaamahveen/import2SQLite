@@ -1,4 +1,10 @@
 # import2SQLite
+List of files in the repository
+-----------------------------------------------------------------------------------------------------------------------
+1. Source files in mavensql folder
+2. READ.md file with all the instructions
+3. Source CSV file 
+4. DDL file with create and insert queries
 
 Instructions to build the project
 -----------------------------------------------------------------------------------------------------------------------
