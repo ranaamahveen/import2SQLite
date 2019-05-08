@@ -12,19 +12,19 @@ Instructions to build the project
 2. Download the source files from git repository 
 3. Open command prompt and navigate to the folder mavensql where pom.xml is located
 4. Run the command 'mvn clean package' to clean and build the jar package
-5. After successful build, a jar file named 'importCSV-0.0.1-SNAPSHOT.jar' is generated in target folder
+5. After successful build, a jar file named 'importCSV-0.0.1-SNAPSHOT.jar' will be generated in target folder
 
 Instructions to run the program
 -----------------------------------------------------------------------------------------------------------------------
-1. Run the command 'java -jar target/importCSV-0.0.1-SNAPSHOT.jar' from the same path
+1. Run the command 'java -jar target/importCSV-0.0.1-SNAPSHOT.jar' from the same path where pom.xml is located
 2. A prompt to enter csv file name will be shown, enter the source csv file name(ms3Interview.csv) with path
 3. After a successful run, ms3log.txt, ms3.db and bad-data<time-stamp>.csv will be generated in your working directory
-7.	Load ms3.db to check the inserted table using SQLite manager add on or SQLite DB manager
+4. Load ms3.db to check the inserted table using SQLite manager addon or SQLite DB manager
 
 Technologies and Versions used
 ----------------------------------------
+I used the following technologies:
 
-I used the following technologies: 
 Java, JDBC, maven build tool, log4j for logging purposes, DB browser for SQLite for testing and Eclipse IDE
 Jdk – jdk-10
 SQLite JDBC driver - sqlite-jdbc-3.8.6.jar
