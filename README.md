@@ -25,9 +25,10 @@ Technologies and Versions used
 ----------------------------------------
 I used the following technologies:
 
-Java, JDBC, maven build tool, log4j for logging purposes, DB browser for SQLite for testing and Eclipse IDE
-Jdk – jdk-10
+Java, JDBC, maven build tool, log4j for logging purposes, DB browser for SQLite for testing and Eclipse IDE/nJdk – jdk-10
+
 SQLite JDBC driver - sqlite-jdbc-3.8.6.jar
+
 Log4j – log4j-1.2.17.jar
 
 Requirements
