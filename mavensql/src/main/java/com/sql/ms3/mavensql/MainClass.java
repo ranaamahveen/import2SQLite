@@ -65,6 +65,7 @@ public class MainClass {
 			String inputFileName = userFile.nextLine().trim();
 			ArrayList<CSVReader> listProduct = getListProductFromTextFile(inputFileName);
 			//Insert list to SQLite DB
+			System.out.println("Inserting good records to SQLite DB....");
 			for(int i = 1; i < listProduct.size(); i ++) {
 				preparedStatement.setString(1, listProduct.get(i).getA());
 				preparedStatement.setString(2, listProduct.get(i).getB());
@@ -78,7 +79,7 @@ public class MainClass {
 				preparedStatement.setString(10, listProduct.get(i).getJ());
 				preparedStatement.executeUpdate();
 			}
-			LOGGER.info("CSV upload successful!!!");
+			LOGGER.info("Insert to SQLite DB is successful!!!");
 		} catch (Exception e) {
 			e.printStackTrace();
 		}
@@ -139,8 +140,8 @@ public class MainClass {
 			}
 			//logging the statics to log file
 			LOGGER.info("number of records recieved : " +recordsReceivedCount);
-			LOGGER.info("number of records successful : " +(recordsReceivedCount-recordsFailedCount));
-			LOGGER.info("number of records failed : " +recordsFailedCount);
+			LOGGER.info("number of good records : " +(recordsReceivedCount-recordsFailedCount));
+			LOGGER.info("number of bad records : " +recordsFailedCount);
 		} catch (Exception e) {
 			e.printStackTrace();
 		} finally {
